@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1274B74718FAA61D005A7D86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1274B74618FAA61D005A7D86 /* Foundation.framework */; };
+		1274B74918FAA61D005A7D86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1274B74818FAA61D005A7D86 /* CoreGraphics.framework */; };
+		1274B74B18FAA61D005A7D86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1274B74A18FAA61D005A7D86 /* UIKit.framework */; };
+		1274B75918FAA61D005A7D86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1274B75818FAA61D005A7D86 /* Images.xcassets */; };
+		1274B76018FAA61D005A7D86 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1274B75F18FAA61D005A7D86 /* XCTest.framework */; };
+		1274B76118FAA61D005A7D86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1274B74618FAA61D005A7D86 /* Foundation.framework */; };
+		1274B76218FAA61D005A7D86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1274B74A18FAA61D005A7D86 /* UIKit.framework */; };
+		1274B76A18FAA61D005A7D86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1274B76818FAA61D005A7D86 /* InfoPlist.strings */; };
+		1274B76C18FAA61D005A7D86 /* GLEarthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1274B76B18FAA61D005A7D86 /* GLEarthTests.m */; };
+		1274B77A18FAA744005A7D86 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1274B77918FAA744005A7D86 /* OpenGLES.framework */; };
+		1274B77C18FAA74B005A7D86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1274B77B18FAA74B005A7D86 /* QuartzCore.framework */; };
+		1274B78318FAAA94005A7D86 /* cloud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1274B78118FAAA94005A7D86 /* cloud.jpg */; };
+		1274B78418FAAA94005A7D86 /* hexmap2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1274B78218FAAA94005A7D86 /* hexmap2.jpg */; };
+		1274B78D18FADC3D005A7D86 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1274B78918FADC3D005A7D86 /* EAGLView.m */; };
+		1274B78E18FADC3D005A7D86 /* ES1Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1274B78B18FADC3D005A7D86 /* ES1Renderer.mm */; };
+		1274B79418FADC5B005A7D86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1274B79318FADC5B005A7D86 /* AppDelegate.m */; };
+		1274B79618FADC69005A7D86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1274B79518FADC69005A7D86 /* main.m */; };
+		12B5F63B18FEC0EA0008DFFD /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12B5F63A18FEC0EA0008DFFD /* earth.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1274B76318FAA61D005A7D86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1274B73B18FAA61D005A7D86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1274B74218FAA61D005A7D86;
+			remoteInfo = GLEarth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1274B74318FAA61D005A7D86 /* GLEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1274B74618FAA61D005A7D86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1274B74818FAA61D005A7D86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1274B74A18FAA61D005A7D86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1274B74E18FAA61D005A7D86 /* GLEarth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GLEarth-Info.plist"; path = "GLEarth/GLEarth-Info.plist"; sourceTree = "<group>"; };
+		1274B75818FAA61D005A7D86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GLEarth/Images.xcassets; sourceTree = "<group>"; };
+		1274B75E18FAA61D005A7D86 /* GLEarthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLEarthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1274B75F18FAA61D005A7D86 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1274B76718FAA61D005A7D86 /* GLEarthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLEarthTests-Info.plist"; sourceTree = "<group>"; };
+		1274B76918FAA61D005A7D86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1274B76B18FAA61D005A7D86 /* GLEarthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLEarthTests.m; sourceTree = "<group>"; };
+		1274B77918FAA744005A7D86 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1274B77B18FAA74B005A7D86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1274B78118FAAA94005A7D86 /* cloud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cloud.jpg; sourceTree = "<group>"; };
+		1274B78218FAAA94005A7D86 /* hexmap2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hexmap2.jpg; sourceTree = "<group>"; };
+		1274B78818FADC3D005A7D86 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = GLEarth/Classes/EAGLView.h; sourceTree = "<group>"; };
+		1274B78918FADC3D005A7D86 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EAGLView.m; path = GLEarth/Classes/EAGLView.m; sourceTree = "<group>"; };
+		1274B78A18FADC3D005A7D86 /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES1Renderer.h; path = GLEarth/Classes/ES1Renderer.h; sourceTree = "<group>"; };
+		1274B78B18FADC3D005A7D86 /* ES1Renderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ES1Renderer.mm; path = GLEarth/Classes/ES1Renderer.mm; sourceTree = "<group>"; };
+		1274B78C18FADC3D005A7D86 /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESRenderer.h; path = GLEarth/Classes/ESRenderer.h; sourceTree = "<group>"; };
+		1274B78F18FADC4D005A7D86 /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Matrix.hpp; path = GLEarth/Classes/Matrix.hpp; sourceTree = "<group>"; };
+		1274B79018FADC4D005A7D86 /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Quaternion.hpp; path = GLEarth/Classes/Quaternion.hpp; sourceTree = "<group>"; };
+		1274B79118FADC4D005A7D86 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vector.hpp; path = GLEarth/Classes/Vector.hpp; sourceTree = "<group>"; };
+		1274B79218FADC5B005A7D86 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GLEarth/Classes/AppDelegate.h; sourceTree = "<group>"; };
+		1274B79318FADC5B005A7D86 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GLEarth/Classes/AppDelegate.m; sourceTree = "<group>"; };
+		1274B79518FADC69005A7D86 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GLEarth/Classes/main.m; sourceTree = "<group>"; };
+		1274B79918FAE043005A7D86 /* GLEarth-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLEarth-Prefix.pch"; path = "GLEarth/GLEarth-Prefix.pch"; sourceTree = "<group>"; };
+		12B5F63A18FEC0EA0008DFFD /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1274B74018FAA61D005A7D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1274B77C18FAA74B005A7D86 /* QuartzCore.framework in Frameworks */,
+				1274B77A18FAA744005A7D86 /* OpenGLES.framework in Frameworks */,
+				1274B74918FAA61D005A7D86 /* CoreGraphics.framework in Frameworks */,
+				1274B74B18FAA61D005A7D86 /* UIKit.framework in Frameworks */,
+				1274B74718FAA61D005A7D86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1274B75B18FAA61D005A7D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1274B76018FAA61D005A7D86 /* XCTest.framework in Frameworks */,
+				1274B76218FAA61D005A7D86 /* UIKit.framework in Frameworks */,
+				1274B76118FAA61D005A7D86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1274B73A18FAA61D005A7D86 = {
+			isa = PBXGroup;
+			children = (
+				1274B78718FADC28005A7D86 /* Main */,
+				1274B78518FADC04005A7D86 /* Views and Controllers */,
+				1274B78618FADC1C005A7D86 /* Model Classes */,
+				1274B78018FAAA59005A7D86 /* Resources */,
+				1274B76518FAA61D005A7D86 /* GLEarthTests */,
+				1274B74518FAA61D005A7D86 /* Frameworks */,
+				1274B74418FAA61D005A7D86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1274B74418FAA61D005A7D86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1274B74318FAA61D005A7D86 /* GLEarth.app */,
+				1274B75E18FAA61D005A7D86 /* GLEarthTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1274B74518FAA61D005A7D86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1274B77B18FAA74B005A7D86 /* QuartzCore.framework */,
+				1274B77918FAA744005A7D86 /* OpenGLES.framework */,
+				1274B74618FAA61D005A7D86 /* Foundation.framework */,
+				1274B74818FAA61D005A7D86 /* CoreGraphics.framework */,
+				1274B74A18FAA61D005A7D86 /* UIKit.framework */,
+				1274B75F18FAA61D005A7D86 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1274B76518FAA61D005A7D86 /* GLEarthTests */ = {
+			isa = PBXGroup;
+			children = (
+				1274B76B18FAA61D005A7D86 /* GLEarthTests.m */,
+				1274B76618FAA61D005A7D86 /* Supporting Files */,
+			);
+			path = GLEarthTests;
+			sourceTree = "<group>";
+		};
+		1274B76618FAA61D005A7D86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1274B76718FAA61D005A7D86 /* GLEarthTests-Info.plist */,
+				1274B76818FAA61D005A7D86 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1274B78018FAAA59005A7D86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1274B74E18FAA61D005A7D86 /* GLEarth-Info.plist */,
+				1274B75818FAA61D005A7D86 /* Images.xcassets */,
+				12B5F63A18FEC0EA0008DFFD /* earth.jpg */,
+				1274B78118FAAA94005A7D86 /* cloud.jpg */,
+				1274B78218FAAA94005A7D86 /* hexmap2.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1274B78518FADC04005A7D86 /* Views and Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1274B78818FADC3D005A7D86 /* EAGLView.h */,
+				1274B78918FADC3D005A7D86 /* EAGLView.m */,
+				1274B78C18FADC3D005A7D86 /* ESRenderer.h */,
+				1274B78A18FADC3D005A7D86 /* ES1Renderer.h */,
+				1274B78B18FADC3D005A7D86 /* ES1Renderer.mm */,
+			);
+			name = "Views and Controllers";
+			sourceTree = "<group>";
+		};
+		1274B78618FADC1C005A7D86 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1274B78F18FADC4D005A7D86 /* Matrix.hpp */,
+				1274B79018FADC4D005A7D86 /* Quaternion.hpp */,
+				1274B79118FADC4D005A7D86 /* Vector.hpp */,
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		1274B78718FADC28005A7D86 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1274B79918FAE043005A7D86 /* GLEarth-Prefix.pch */,
+				1274B79518FADC69005A7D86 /* main.m */,
+				1274B79218FADC5B005A7D86 /* AppDelegate.h */,
+				1274B79318FADC5B005A7D86 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1274B74218FAA61D005A7D86 /* GLEarth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1274B76F18FAA61D005A7D86 /* Build configuration list for PBXNativeTarget "GLEarth" */;
+			buildPhases = (
+				1274B73F18FAA61D005A7D86 /* Sources */,
+				1274B74018FAA61D005A7D86 /* Frameworks */,
+				1274B74118FAA61D005A7D86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLEarth;
+			productName = GLEarth;
+			productReference = 1274B74318FAA61D005A7D86 /* GLEarth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1274B75D18FAA61D005A7D86 /* GLEarthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1274B77218FAA61D005A7D86 /* Build configuration list for PBXNativeTarget "GLEarthTests" */;
+			buildPhases = (
+				1274B75A18FAA61D005A7D86 /* Sources */,
+				1274B75B18FAA61D005A7D86 /* Frameworks */,
+				1274B75C18FAA61D005A7D86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1274B76418FAA61D005A7D86 /* PBXTargetDependency */,
+			);
+			name = GLEarthTests;
+			productName = GLEarthTests;
+			productReference = 1274B75E18FAA61D005A7D86 /* GLEarthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1274B73B18FAA61D005A7D86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					1274B75D18FAA61D005A7D86 = {
+						TestTargetID = 1274B74218FAA61D005A7D86;
+					};
+				};
+			};
+			buildConfigurationList = 1274B73E18FAA61D005A7D86 /* Build configuration list for PBXProject "GLEarth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1274B73A18FAA61D005A7D86;
+			productRefGroup = 1274B74418FAA61D005A7D86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1274B74218FAA61D005A7D86 /* GLEarth */,
+				1274B75D18FAA61D005A7D86 /* GLEarthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1274B74118FAA61D005A7D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B5F63B18FEC0EA0008DFFD /* earth.jpg in Resources */,
+				1274B78318FAAA94005A7D86 /* cloud.jpg in Resources */,
+				1274B75918FAA61D005A7D86 /* Images.xcassets in Resources */,
+				1274B78418FAAA94005A7D86 /* hexmap2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1274B75C18FAA61D005A7D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1274B76A18FAA61D005A7D86 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1274B73F18FAA61D005A7D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1274B79618FADC69005A7D86 /* main.m in Sources */,
+				1274B79418FADC5B005A7D86 /* AppDelegate.m in Sources */,
+				1274B78E18FADC3D005A7D86 /* ES1Renderer.mm in Sources */,
+				1274B78D18FADC3D005A7D86 /* EAGLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1274B75A18FAA61D005A7D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1274B76C18FAA61D005A7D86 /* GLEarthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1274B76418FAA61D005A7D86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1274B74218FAA61D005A7D86 /* GLEarth */;
+			targetProxy = 1274B76318FAA61D005A7D86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1274B76818FAA61D005A7D86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1274B76918FAA61D005A7D86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1274B76D18FAA61D005A7D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1274B76E18FAA61D005A7D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1274B77018FAA61D005A7D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLEarth/GLEarth-Prefix.pch";
+				INFOPLIST_FILE = "GLEarth/GLEarth-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1274B77118FAA61D005A7D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLEarth/GLEarth-Prefix.pch";
+				INFOPLIST_FILE = "GLEarth/GLEarth-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1274B77318FAA61D005A7D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLEarth.app/GLEarth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLEarth/GLEarth-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GLEarthTests/GLEarthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1274B77418FAA61D005A7D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLEarth.app/GLEarth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLEarth/GLEarth-Prefix.pch";
+				INFOPLIST_FILE = "GLEarthTests/GLEarthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1274B73E18FAA61D005A7D86 /* Build configuration list for PBXProject "GLEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1274B76D18FAA61D005A7D86 /* Debug */,
+				1274B76E18FAA61D005A7D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1274B76F18FAA61D005A7D86 /* Build configuration list for PBXNativeTarget "GLEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1274B77018FAA61D005A7D86 /* Debug */,
+				1274B77118FAA61D005A7D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1274B77218FAA61D005A7D86 /* Build configuration list for PBXNativeTarget "GLEarthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1274B77318FAA61D005A7D86 /* Debug */,
+				1274B77418FAA61D005A7D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1274B73B18FAA61D005A7D86 /* Project object */;
+}
